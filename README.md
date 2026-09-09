@@ -1,2 +1,2 @@
-# tpoortexan.github.io
-My Portfolio
+# Timothy Poorman
+Welcome To My Portfolio

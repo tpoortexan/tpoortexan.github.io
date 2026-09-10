@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluid Laboratory Module — Timothy Poorman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="nav is-scrolled" id="nav">
+    <div class="nav__inner container">
+      <a href="../index.html" class="nav__brand">TP<span class="nav__brand-dot">.</span></a>
+      <nav class="nav__links">
+        <a href="../index.html#projects">← All Projects</a>
+        <a href="../index.html#contact" class="nav__cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <article class="project-page">
+    <div class="container">
+      <p class="hero__eyebrow">Senior Design · Fluid Mechanics</p>
+      <h1 class="project-page__title">Fluid Laboratory Module — FLO</h1>
+      <p class="project__meta">Mechanical Engineering Team Member · Fluid Lab Overhaul</p>
+
+      <div class="project__tags">
+        <span>Fluid Mechanics</span><span>Head Loss</span><span>Flow Conditioning</span><span>Mechanical Design</span><span>P&amp;ID</span>
+      </div>
+
+      <h2>Overview</h2>
+      <p>The FLO Senior Design project involved the overhaul and development of modules for a fluid mechanics laboratory. The project required balancing engineering performance with practical considerations such as student use, instructor requirements, manufacturability, and system operation.</p>
+
+      <h2>My Contributions</h2>
+      <ul class="doc-list">
+        <li>Researched head-loss behavior through piping and flow-conditioning components.</li>
+        <li>Investigated methods for normalizing the velocity gradient of flow through a pipe.</li>
+        <li>Compared the behavior and application of honeycomb flow straighteners and tube bundles.</li>
+        <li>Performed initial head-loss calculations using the Darcy-Weisbach equation.</li>
+        <li>Used the Hazen-Williams equation as an additional method of evaluating head loss.</li>
+        <li>Iterated the design of the head-loss module based on engineering calculations and team feedback.</li>
+        <li>Worked with a third-party drafter to develop and revise a professional P&amp;ID.</li>
+        <li>Incorporated feedback from team leadership concerning student and professor use into the final design.</li>
+      </ul>
+
+      <h2>Engineering Analysis</h2>
+      <p>A primary portion of my work involved estimating frictional head loss through the system using the Darcy-Weisbach relationship:</p>
+      <pre class="formula">h_f = f · (L / D) · (V² / 2g)</pre>
+      <p>where <em>h<sub>f</sub></em> is frictional head loss, <em>f</em> the Darcy friction factor, <em>L</em> the pipe length, <em>D</em> the hydraulic diameter, <em>V</em> the average fluid velocity, and <em>g</em> gravitational acceleration. The analysis was used to evaluate the effect of different design configurations and to help guide development of the final module.</p>
+
+      <a href="../index.html#projects" class="btn btn--ghost" style="margin-top:2rem;">← Back to Projects</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span class="year"></span> Timothy Poorman.</p>
+      <a href="../index.html#top" class="footer__top">Home ↑</a>
+    </div>
+  </footer>
+  <script>document.querySelectorAll('.year').forEach(e=>e.textContent=new Date().getFullYear());</script>
+</body>
+</html>

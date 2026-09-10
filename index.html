@@ -30,10 +30,10 @@
 
       <nav class="nav__links" id="navLinks">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#process">Process</a>
         <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#contact" class="nav__cta">Contact</a>
       </nav>
@@ -115,11 +115,84 @@
       </div>
     </section>
 
-    <!-- ===== Projects ===== -->
-    <section class="section section--alt" id="projects">
+    <!-- ===== Experience ===== -->
+    <section class="section section--alt" id="experience">
       <div class="container">
         <div class="section__head">
           <span class="section__index">02</span>
+          <h2 class="section__title">Professional Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item" id="job-scot">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <h3>Sales Engineer</h3>
+              <p class="timeline__meta">Scot Industries · Hugh Springs, Texas · June 2026 – Present</p>
+              <p>Bridging engineering and manufacturing to improve product quality and production efficiency while supporting customers on technical product issues.</p>
+              <ul>
+                <li>Collaborated with the plant supervisor on manufacturing process improvements to streamline production methods.</li>
+                <li>Performed root-cause analysis on customer product issues to identify manufacturing- and design-related failures.</li>
+                <li>Implemented an inventory system to minimize material waste in the manufacturing process.</li>
+              </ul>
+              <div class="project__tags">
+                <span data-tag="Process Improvement">Process Improvement</span><span data-tag="Root-Cause Analysis">Root-Cause Analysis</span><span data-tag="Manufacturing">Manufacturing</span><span data-tag="Customer Support">Customer Support</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item" id="job-komatsu">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <h3>Engineering Intern</h3>
+              <p class="timeline__meta">Komatsu Mining · Longview, Texas · August 2024 – April 2026</p>
+              <p>Supported motor testing and broader engineering projects in a facility running several hundred motor tests each year.</p>
+              <ul>
+                <li>Performed SR motor testing and optimization using NI DAQs and RPT/RTD sensors, collecting and interpreting data to evaluate and improve performance and reliability.</li>
+                <li>Supported engineering projects using SolidWorks and Excel, applying thermodynamics and heat transfer principles.</li>
+              </ul>
+              <div class="project__tags">
+                <span data-tag="NI DAQ">NI DAQ</span><span data-tag="RPT/RTD Sensors">RPT/RTD Sensors</span><span data-tag="Motor Testing">Motor Testing</span><span data-tag="SolidWorks">SolidWorks</span><span data-tag="Excel">Excel</span><span data-tag="Data Analysis">Data Analysis</span>
+              </div>
+
+              <h4 class="timeline__showcase-title">CAD Design</h4>
+              <div class="gallery">
+                <figure class="gallery__item" data-full="assets/images/komatsu/komatsu-04.png">
+                  <img src="assets/images/komatsu/komatsu-04.png" alt="SolidWorks CAD drawing of a dimensioned test-cart frame assembly" loading="lazy" />
+                  <figcaption>Dimensioned test-cart assembly</figcaption>
+                </figure>
+                <figure class="gallery__item" data-full="assets/images/komatsu/komatsu-05.png">
+                  <img src="assets/images/komatsu/komatsu-05.png" alt="SolidWorks CAD model of a multi-shelf test frame" loading="lazy" />
+                  <figcaption>Multi-shelf test frame</figcaption>
+                </figure>
+              </div>
+
+              <h4 class="timeline__showcase-title">Bearing Failure Analysis</h4>
+              <div class="gallery">
+                <figure class="gallery__item" data-full="assets/images/komatsu/komatsu-02.jpg">
+                  <img src="assets/images/komatsu/komatsu-02.jpg" alt="Cut bearing apart and individually examined bearings and raceway" loading="lazy" />
+                  <figcaption>Cut bearing apart and individually examined bearings and raceway</figcaption>
+                </figure>
+                <figure class="gallery__item" data-full="assets/images/komatsu/komatsu-01.jpg">
+                  <img src="assets/images/komatsu/komatsu-01.jpg" alt="Found spalling on several parts of raceway" loading="lazy" />
+                  <figcaption>Found spalling on several parts of raceway</figcaption>
+                </figure>
+                <figure class="gallery__item" data-full="assets/images/komatsu/komatsu-03.jpg">
+                  <img src="assets/images/komatsu/komatsu-03.jpg" alt="Examined inner bearing retainer for wear" loading="lazy" />
+                  <figcaption>Examined inner bearing retainer for wear</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">03</span>
           <h2 class="section__title">Featured Projects</h2>
         </div>
         <p class="section__intro">
@@ -211,10 +284,10 @@
     </section>
 
     <!-- ===== Process ===== -->
-    <section class="section" id="process">
+    <section class="section section--alt" id="process">
       <div class="container">
         <div class="section__head">
-          <span class="section__index">03</span>
+          <span class="section__index">04</span>
           <h2 class="section__title">Engineering Design Process</h2>
         </div>
         <p class="section__intro">A structured approach I use to work through mechanical engineering problems.</p>
@@ -233,10 +306,10 @@
     </section>
 
     <!-- ===== Skills ===== -->
-    <section class="section section--alt" id="skills">
+    <section class="section" id="skills">
       <div class="container">
         <div class="section__head">
-          <span class="section__index">04</span>
+          <span class="section__index">05</span>
           <h2 class="section__title">Technical Skills</h2>
         </div>
 
@@ -244,7 +317,7 @@
           <div class="skills__group">
             <h3>Mechanical Engineering</h3>
             <ul>
-              <li><a class="skill" href="#proj-fluid" data-highlight="Mechanical Design"></a>Mechanical Design</a></li><li><a class="skill" href="#proj-thermal" data-highlight="Root-Cause Analysis">Engineering Analysis</a></li><li><a class="skill" href="#proj-fluid" data-highlight="Mechanical Design">Machine Design</a></li>
+              <li><a class="skill" href="#proj-fluid" data-highlight="Mechanical Design">Mechanical Design</a></li><li><a class="skill" href="#proj-thermal" data-highlight="Root-Cause Analysis">Engineering Analysis</a></li><li><a class="skill" href="#proj-fluid" data-highlight="Mechanical Design">Machine Design</a></li>
               <li><a class="skill" href="#proj-fluid" data-highlight="Fluid Mechanics">Fluid Mechanics</a></li><li><a class="skill" href="#proj-thermal" data-highlight="Heat Transfer">Heat Transfer</a></li><li><a class="skill" href="#proj-thermal" data-highlight="Thermodynamics">Thermodynamics</a></li>
               <li><a class="skill" href="#education" data-highlight="Mechanics of Materials">Mechanics of Materials</a></li><li><a class="skill" href="#job-scot" data-highlight="Root-Cause Analysis">Root-Cause Analysis</a></li><li><a class="skill" href="#proj-joyal" data-highlight="Process Optimization">Design Optimization</a></li>
             </ul>
@@ -269,51 +342,6 @@
             <ul>
               <li><a class="skill" href="#proj-instrumentation" data-highlight="LabVIEW">LabVIEW</a></li><li><a class="skill" href="#job-komatsu" data-highlight="Excel">Microsoft Excel</a></li><li><a class="skill" href="#job-komatsu" data-highlight="SolidWorks">SolidWorks</a></li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Experience ===== -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section__head">
-          <span class="section__index">05</span>
-          <h2 class="section__title">Professional Experience</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline__item" id="job-scot">
-            <div class="timeline__marker"></div>
-            <div class="timeline__content">
-              <h3>Sales Engineer</h3>
-              <p class="timeline__meta">Scot Industries · Hugh Springs, Texas · June 2026 – Present</p>
-              <p>Bridging engineering and manufacturing to improve product quality and production efficiency while supporting customers on technical product issues.</p>
-              <ul>
-                <li>Collaborated with the plant supervisor on manufacturing process improvements to streamline production methods.</li>
-                <li>Performed root-cause analysis on customer product issues to identify manufacturing- and design-related failures.</li>
-                <li>Implemented an inventory system to minimize material waste in the manufacturing process.</li>
-              </ul>
-              <div class="project__tags">
-                <span data-tag="Process Improvement">Process Improvement</span><span data-tag="Root-Cause Analysis">Root-Cause Analysis</span><span data-tag="Manufacturing">Manufacturing</span><span data-tag="Customer Support">Customer Support</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline__item" id="job-komatsu">
-            <div class="timeline__marker"></div>
-            <div class="timeline__content">
-              <h3>Engineering Intern</h3>
-              <p class="timeline__meta">Komatsu Mining · Longview, Texas · August 2024 – April 2026</p>
-              <p>Supported motor testing and broader engineering projects in a facility running several hundred motor tests each year.</p>
-              <ul>
-                <li>Performed SR motor testing and optimization using NI DAQs and RPT/RTD sensors, collecting and interpreting data to evaluate and improve performance and reliability.</li>
-                <li>Supported engineering projects using SolidWorks and Excel, applying thermodynamics and heat transfer principles.</li>
-              </ul>
-              <div class="project__tags">
-                <span data-tag="NI DAQ">NI DAQ</span><span data-tag="RPT/RTD Sensors">RPT/RTD Sensors</span><span data-tag="Motor Testing">Motor Testing</span><span data-tag="SolidWorks">SolidWorks</span><span data-tag="Excel">Excel</span><span data-tag="Data Analysis">Data Analysis</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -386,5 +414,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
 </body>
 </html>

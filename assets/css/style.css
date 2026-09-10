@@ -35,8 +35,9 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
-h1, h2, h3, h4 { line-height: 1.2; margin: 0; font-weight: 700; letter-spacing: -0.02em; }
+h1, h2, h3, h4 { line-height: 1.2; margin: 0; font-weight: 700; letter-spacing: -0.02em; overflow-wrap: break-word; }
 p { margin: 0 0 1rem; }
 a { color: inherit; text-decoration: none; }
 ul { margin: 0; padding: 0; list-style: none; }
@@ -117,7 +118,10 @@ strong { color: var(--text); font-weight: 600; }
   font-family: var(--mono); color: var(--accent); font-size: 0.9rem;
   letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem;
 }
-.hero__title { font-size: clamp(2.8rem, 8vw, 5rem); font-weight: 800; margin-bottom: 1rem; }
+.hero__title {
+  font-size: clamp(2.3rem, 11vw, 5rem); font-weight: 800; margin-bottom: 1rem;
+  overflow-wrap: break-word; word-break: break-word; hyphens: auto;
+}
 .hero__subtitle { font-size: clamp(1rem, 2.4vw, 1.35rem); color: var(--text-muted); font-weight: 500; margin-bottom: 1.4rem; }
 .hero__lead { font-size: 1.08rem; color: var(--text-muted); max-width: 620px; margin-bottom: 2.2rem; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.4rem; }
@@ -377,10 +381,41 @@ strong { color: var(--text); font-weight: 600; }
   .skills { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; gap: 0.6rem; }
   .section { padding: 72px 0; }
+
+  /* Hero */
+  .hero { padding: 96px 0 72px; min-height: auto; }
+  .hero__lead { font-size: 1rem; }
+  .hero__actions { gap: 0.7rem; }
+  .btn { width: 100%; }
+  .hero__actions .btn { flex: 1 1 100%; }
+
+  /* Project detail pages */
+  .project-page { padding: 100px 0 64px; }
+  .formula { font-size: 0.82rem; padding: 0.9rem 1rem; }
 }
 @media (max-width: 480px) {
+  .container { padding: 0 18px; }
   .process { grid-template-columns: 1fr; }
   .contact { grid-template-columns: 1fr; }
+
+  /* Section headers wrap the index above the title cleanly */
+  .section__head { flex-wrap: wrap; gap: 0.35rem 0.75rem; }
+
+  /* Hero links can wrap on very small screens */
+  .hero__links { flex-wrap: wrap; row-gap: 0.4rem; }
+
+  /* Project cards: keep the number inline and compact */
+  .project { padding: 1.4rem; }
+  .project__num { font-size: 1.2rem; }
+  .project__title { font-size: 1.15rem; }
+
+  /* Timeline breathing room */
+  .timeline { padding-left: 22px; }
+  .timeline__marker { left: -22px; }
+
+  /* About card + contact cards a touch tighter */
+  .about__card, .skills__group { padding: 1.3rem; }
+  .flow-loop { padding: 1.1rem; }
 }
 
 /* ---------- Reduced motion ---------- */
